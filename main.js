@@ -3,7 +3,7 @@ $(document).ready(function(){
     $('#button').click(function(){
         var inserisci = $('input[name=ListItem]').val();
         $('ul').append('<li>' + inserisci + '</li>');
-      });
+    });
 
       $('input[name=ListItem]').keypress(function(e){
         var inserisci = $('input[name=ListItem]').val();
@@ -16,7 +16,4 @@ $(document).ready(function(){
         $(this).toggleClass('strike').fadeOut('slow');
       });
 
-      $('input').focus(function(){
-        $(this).val('');
-      });
-  });
+});
