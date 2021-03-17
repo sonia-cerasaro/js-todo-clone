@@ -5,9 +5,10 @@ $(document).ready(function(){
         $('ul').append('<li>' + inserisci + '</li>');
       });
 
-      $('input[name=ListItem]').keyup(function(e){
-        if(e.which == 13){
-          $('#button').click();
+      $('input[name=ListItem]').keypress(function(e){
+        var inserisci = $('input[name=ListItem]').val();
+        if(e.which == 13 || e.keyCode == 13){
+          $('ul').append('<li>' + inserisci + '</li>');
         }
       });
 
