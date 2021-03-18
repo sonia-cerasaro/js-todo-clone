@@ -16,10 +16,6 @@ margin-top: 40px;
 background: white;
 border-radius: 5px;}
 
-form {
-display: inline-block;
-}
-
 input{
 padding: 4px 15px;
 }
@@ -40,6 +36,7 @@ opacity: .8;
 }
 
 ul {
+  margin-top: 5px;
   padding-left: 20px;
 }
 
@@ -48,7 +45,8 @@ ul li {
   color:#000;
 }
 
-ul li:nth-child(odd){
+ul li:nth-child(even){
+  width: 222px;
   background: #dfdfdf;
   border-radius: 5px;
 }
