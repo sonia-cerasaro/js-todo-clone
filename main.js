@@ -1,12 +1,12 @@
 $(document).ready(function(){
 
     $('#button').click(function(){
-        var inserisci = $('input[name=ListItem]').val();
+        var inserisci = $('input').val();
         $('ul').append('<li>' + inserisci + '</li>');
     });
 
-      $('input[name=ListItem]').keypress(function(e){
-        var inserisci = $('input[name=ListItem]').val();
+      $('input').keypress(function(e){
+        var inserisci = $('input').val();
         if(e.which == 13 || e.keyCode == 13){
           $('ul').append('<li>' + inserisci + '</li>');
         }
